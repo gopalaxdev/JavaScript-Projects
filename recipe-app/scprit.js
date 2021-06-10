@@ -163,7 +163,18 @@ function showRecipeDetail() {
 }
 
 function closeModel() {
-    const displayModel = document.getElementById("display-recipe");
+    var user = {
+        name: "Vi",
+        address: "asghs"
+    }
 
-    displayModel.classList.add("hidden");
+    function userDetails(name, add) {
+        return (name + " " + add);
+    }
+
+    var fun1 = userDetails(user.name, user.address);
+    var fun2 = userDetails("Vi", "asad");
+
+    console.log(fun1);
+    console.log(fun2);
 }
